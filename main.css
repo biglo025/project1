@@ -1,0 +1,200 @@
+/* import font family */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,300;0,500;1,100;1,300;1,500&display=swap');
+
+/* start of reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, h4, h5, h6, p, a, ul, ol, li{
+    /* font-family: sans-serif; */
+    font-family: 'Noto Sans', sans-serif; 
+    font-size: 16px;
+    font-weight: lighter;
+    /* color:black;  */
+    color:rgb(204, 223, 126);
+    
+}
+
+/* end of reset */
+
+body{
+    max-width: 1200px;
+    margin: 0px auto;
+    /* border: 1px solid red;  */
+    background-color:rgb(53, 51, 59);
+
+}
+
+img{
+    display: block;
+    width: 100%;
+    /* border: 5px solid rgb(120, 41, 42); */
+
+}
+
+header, footer {
+    height: 75px;
+    /* font-size: 100px; */
+    /* background-color:rgb(70, 68, 78); */
+    font-weight: bold;
+    background-color: rgb(120, 41, 42); 
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px; 
+    margin-bottom: 15px;
+    
+    
+}
+/* home icon */
+.headericon{
+    width: 25px;
+    display: inline-block; 
+    
+    
+}
+.logo {
+    max-width: 125px;
+}
+footer{
+    margin-top: 20px; 
+}
+h1{
+    font-size: 32px;
+    font-weight:bold;
+    /* color:antiquewhite; */
+    /* text-align:center; */
+    /* padding: 10px 200px 10px 200px; */
+    /* margin: 10px 200px 10px 200px; */
+    margin: 10px 10vw;
+    background-color:rgb(120, 41, 42);
+    
+}
+
+h2{
+    font-size: 25px;
+    padding: 10px
+    
+}
+h3{
+    color:aquamarine;
+}
+
+p{
+    color:aquamarine;
+    padding: 20px 20px 4px 20px;
+}
+li{
+    color:aquamarine;
+    padding: 5px;
+}
+nav{
+    font-size: 60px;
+    padding-bottom: 22px; 
+    
+}
+
+.social-icon{
+    width:50px;
+    display: inline;
+    margin-left: 5px;
+}
+/* at bottom of cite */
+.citation, .citation a{
+    color:rgb(64, 61, 71);
+    text-align:center;
+    font-size: 10px;
+}
+.placephoto{
+    max-width: 50%;
+    align-items:center;
+    margin: 20px auto 10px auto;
+    border: 5px solid rgb(120, 41, 42); 
+}
+.card{
+    display: inline-block;
+    border: 2px solid aquamarine; 
+    width: 300px;
+    padding:8px 8px 8px 8px;
+    margin: 10px 10px 10px 10px;
+    /* background-color: rgb(98, 95, 109); */
+    /* background-color: rgb(204, 51, 51); */
+    background-color: rgb(120, 41, 42);
+
+
+}
+
+.container{
+    /* display: flex; */
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    padding: 0px;
+    text-align: center;
+    /* border: 1px solid green; */
+}
+.backgroundhome{
+    background-image: url("images/HOME.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    /* height vw responds to window size*/
+    height: 20vw;
+    max-height: 220px;
+    /* border: 5px solid rgb(120, 41, 42); */
+}
+form{
+    width: 400px;
+    margin: 20px auto;
+    
+}
+input, textarea {
+    font-size: 1.25em;
+    font-family: 'Noto Sans', sans-serif; 
+    font-weight: lighter;
+    display: block;
+    width: 300px;
+    margin: 10px auto;
+    padding: 6px;
+}
+.form-button{
+    text-align: center;
+    background-color: rgb(120, 41, 42);
+    width: 300px;
+    margin: 0px auto;
+    padding: 6px;
+}
+.thumb{
+    width: 25%;
+    margin: 10px auto;
+}
+
+
+/* media queries */
+@media only screen and (max-width: 614px){
+    header {
+        display:block;
+        height:110px;
+        text-align: center;
+    }
+    nav {
+        margin: 0px auto; 
+        font-size: 16px;
+        
+    }
+    .logo {
+        max-width: 125px;
+        margin: 0px auto;
+        
+    }
+    h1{
+        /* margin: 10px auto; */
+        /* margin: 10px 10vw; */
+    }
+    .social-icon{
+        max-width:30px;
+        display: inline;
+        margin-left: 5px;
+    }
+}
